@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<style type="text/css">
+			.div1{
+				display: flex;
+				flex-direction: row;
+				justify-content:center;
+				gap: 10px;
+			}
+			h1,h2,h3{
+				text-align: center;
+				width: 100%;
+			}
+			img{
+				width: 100%;
+
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			function myFunction() {
+  			// Get the value of the input field with id="numb"
+  			let x = document.getElementById("numb").value;
+  			// If x is Not a Number or less than one or greater than 10
+  			let text;
+  			if (isNaN(x) || x < 1 || x > 10) {
+    				text = "Número no correcto";
+  			} else {
+    				text = "Número correcto";
+  			}
+  			document.getElementById("demo").innerHTML = text;
+			}
+		</script>
+		<div class="div1">
+		<p>Introduzca un número entre el 1 and 10:</p>
+		<input id="numb">
+		<button type="button" onclick="myFunction()">Submit</button>
+		<p id="demo"></p>
+		</div>
+		<h1>Cybersecurity</h1>
+		<h2>icondado</h2>
+		<h3>ft_onion</h3>
+
+		<img src="https://c7.alamy.com/compes/2g40e81/3d-representacion-del-fondo-de-la-web-con-datos-de-matriz-codigo-de-programacion-con-numeros-que-pasan-por-la-pantalla-del-ordenador-generador-del-ordenador-2g40e81.jpg">
+
+	</body>
+</html>
