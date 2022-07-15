@@ -1,0 +1,8 @@
+Hola a todos! Recordad que mañana empezamos con los Workshops de la Liga de ciberseguridad, impartidos por estudiantes de 42. Tendrán lugar todos los jueves por la tarde.
+
+Mañana: 16:30: Docker for cybersecurity: Una iniciación a los contenedores para facilitar el desarrollo, el despliegue y la virtualización de vuestros proyectos del bootcamp.
+IMPORTANTE: Esperamos que antes de que haya dado comienzo el evento, todos tengáis instalado y ejecutándose docker en vuestro Mac. Llegad antes y aseguraos de que el logo de la ballena está en vuestra barra de estado. Docker debe instalarse desde el MSC.
+
+Para arrancar docker desde /goinfre/ y no quedarte sin espacio, puedes usar este script:
+curl https://raw.githubusercontent.com/alexandregv/42toolbox/master/init_docker.sh | bash
+El evento tendrá lugar en Google Meet, pero para que todos estemos en el mismo entorno, lo mejor será que lo hagáis presencialmente desde los Macs del campus.
