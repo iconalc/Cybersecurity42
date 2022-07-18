@@ -1,3 +1,36 @@
+Complilo así:
+gcc -I/System/Volumes/Data/sgoinfre/goinfre/Perso/icondado/homebrew/Cellar/openssl@1.1/1.1.1q/include -L/System/Volumes/Data/sgoinfre/goinfre/Perso/icondado/homebrew/Cellar/openssl@1.1/1.1.1q/lib corsair.c -lssl -lcrypto
+
+Creo las flags:
+vim ~/.zshrc
+export LDFLAGS="-L/System/Volumes/Data/sgoinfre/goinfre/Perso/icondado/homeb    rew/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/System/Volumes/Data/sgoinfre/goinfre/Perso/icondado/home    brew/opt/openssl@1.1/include"
+:wq
+source ~/.zshrc
+
+gcc $LDFLAGS $CPPFLAGS corsair.c corsair.h -lssl -lcrypto
+
+
+Genera certificado:
+openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -sha256 -days 365
+
+
+
+
+
+
+Help:
+
+https://stackoverflow.com/questions/23176439/openssl-command-in-c-to-get-modulus-of-a-public-key-in-the-rsa
+
+https://fm4dd.com/openssl/certpubkey.shtm
+
+https://www.wolfssl.com/documentation/manuals/wolfssl/aes_8h.html
+
+https://www.example-code.com/C/openssl.asp
+Demás:
+
+
 https://github.com/openssl/openssl
 
 https://www.infoq.com/news/2019/12/rsa-iot-vulnerability/
