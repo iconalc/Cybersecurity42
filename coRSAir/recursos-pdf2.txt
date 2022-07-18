@@ -21,6 +21,7 @@ Importante darle clave cuando te la pida.
 
 
 Help:
+https://www.openssl.org/docs/man1.1.1/man3/EVP_PKEY_get0_RSA.html
 
 https://stackoverflow.com/questions/23176439/openssl-command-in-c-to-get-modulus-of-a-public-key-in-the-rsa
 
