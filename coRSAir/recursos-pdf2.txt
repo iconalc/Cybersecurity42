@@ -1,10 +1,6 @@
 Complilo así:
 gcc -I/System/Volumes/Data/sgoinfre/goinfre/Perso/icondado/homebrew/Cellar/openssl@1.1/1.1.1q/include -L/System/Volumes/Data/sgoinfre/goinfre/Perso/icondado/homebrew/Cellar/openssl@1.1/1.1.1q/lib corsair.c -lssl -lcrypto
 
-En mi linux PC:
-gcc -I/usr/local/ssl/include -L/usr/local/ssl/lib corsair.c corsair.h -lssl -lcrypto
-
-
 Creo las flags:
 vim ~/.zshrc
 export LDFLAGS="-L/System/Volumes/Data/sgoinfre/goinfre/Perso/icondado/homeb    rew/opt/openssl@1.1/lib"
@@ -12,6 +8,7 @@ export CPPFLAGS="-I/System/Volumes/Data/sgoinfre/goinfre/Perso/icondado/home    
 :wq
 source ~/.zshrc
 
+MAC:
 gcc $LDFLAGS $CPPFLAGS corsair.c corsair.h -lssl -lcrypto
 
 
@@ -19,7 +16,14 @@ Genera certificado:
 openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -sha256 -days 365
 Importante darle clave cuando te la pida.
 
+Generar números primos:
+https://bigprimes.org/
 
+Instalar Openssl en linux: 
+https://howtoforge.es/como-instalar-la-ultima-version-de-openssl-desde-el-codigo-fuente-en-linux/
+
+En mi linux PC:
+gcc -I/usr/local/ssl/include -L/usr/local/ssl/lib corsair.c corsair.h -lssl -lcrypto
 
 
 
@@ -36,8 +40,10 @@ https://www.wolfssl.com/documentation/manuals/wolfssl/aes_8h.html
 https://www.example-code.com/C/openssl.asp
 Demás:
 
-
 https://github.com/openssl/openssl
+
+https://www.openssl.org/source/
+
 
 https://www.infoq.com/news/2019/12/rsa-iot-vulnerability/
 
