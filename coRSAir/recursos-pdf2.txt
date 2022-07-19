@@ -10,6 +10,8 @@ source ~/.zshrc
 
 MAC:
 gcc $LDFLAGS $CPPFLAGS corsair.c corsair.h -lssl -lcrypto
+./a.out ../cert.pem 39108901677181 108382605687617
+
 
 
 Genera certificado:
@@ -24,7 +26,7 @@ https://howtoforge.es/como-instalar-la-ultima-version-de-openssl-desde-el-codigo
 
 En mi linux PC:
 gcc -I/usr/local/ssl/include -L/usr/local/ssl/lib corsair.c corsair.h -lssl -lcrypto
-
+./a.out ../cert.pem 39108901677181 108382605687617
 
 
 
