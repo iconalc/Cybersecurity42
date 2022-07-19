@@ -29,6 +29,11 @@ gcc -I/usr/local/ssl/include -L/usr/local/ssl/lib corsair.c corsair.h -lssl -lcr
 ./a.out ../cert.pem 39108901677181 108382605687617
 
 
+// argc-> argumentos count, incluye el nombre de mi programa ./a.out 
+// argv-> nº de parametros. Ejemplo: [0]= ./a.out [1]="../cert.pem" 
+// ./a.out ../cert.pem 39108901677181 108382605687617
+
+
 
 Help:
 https://www.openssl.org/docs/man1.1.1/man3/EVP_PKEY_get0_RSA.html
