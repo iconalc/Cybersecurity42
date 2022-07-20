@@ -8,30 +8,15 @@ export CPPFLAGS="-I/System/Volumes/Data/sgoinfre/goinfre/Perso/icondado/home    
 :wq
 source ~/.zshrc
 
-MAC:
 gcc $LDFLAGS $CPPFLAGS corsair.c corsair.h -lssl -lcrypto
-./a.out ../cert.pem 39108901677181 108382605687617
-
 
 
 Genera certificado:
 openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -sha256 -days 365
 Importante darle clave cuando te la pida.
 
-Generar números primos:
-https://bigprimes.org/
-
-Instalar Openssl en linux: 
-https://howtoforge.es/como-instalar-la-ultima-version-de-openssl-desde-el-codigo-fuente-en-linux/
-
-En mi linux PC:
-gcc -I/usr/local/ssl/include -L/usr/local/ssl/lib corsair.c corsair.h -lssl -lcrypto
-./a.out ../cert.pem 39108901677181 108382605687617
 
 
-// argc-> argumentos count, incluye el nombre de mi programa ./a.out 
-// argv-> nº de parametros. Ejemplo: [0]= ./a.out [1]="../cert.pem" 
-// ./a.out ../cert.pem 39108901677181 108382605687617
 
 
 
@@ -47,10 +32,8 @@ https://www.wolfssl.com/documentation/manuals/wolfssl/aes_8h.html
 https://www.example-code.com/C/openssl.asp
 Demás:
 
+
 https://github.com/openssl/openssl
-
-https://www.openssl.org/source/
-
 
 https://www.infoq.com/news/2019/12/rsa-iot-vulnerability/
 
