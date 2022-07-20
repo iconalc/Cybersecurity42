@@ -9,6 +9,12 @@ export CPPFLAGS="-I/System/Volumes/Data/sgoinfre/goinfre/Perso/icondado/home    
 source ~/.zshrc
 
 gcc $LDFLAGS $CPPFLAGS corsair.c corsair.h -lssl -lcrypto
+gcc $LDFLAGS $CPPFLAGS *.c corsair.h -lssl -lcrypto
+./a.out ../cert.pem 
+./a.out "109457599746563" "423305310658063"
+openssl rsa -check -in pkey.pem
+
+Openssl 
 
 
 Genera certificado:
